@@ -4,7 +4,7 @@ $our_team_list = $our_team["team"];
 ?>
 
 <div class="our-team">
-    <h2><?php echo esc_html($our_team["widget_section_name"] ?? ''); ?></h2>
+    <h2 class="our-team__title"><?php echo esc_html($our_team["widget_section_name"] ?? ''); ?></h2>
 
     <?php
     if ('yes' === $our_team['show_slider']) : ?>
@@ -16,14 +16,14 @@ $our_team_list = $our_team["team"];
             <?php
             endif;
             foreach ($our_team_list as $our_team_item) : ?>
-                <div>
+                <div class="our-team__card">
                     <?php if (empty($our_team_item["image"]["id"])) : ?>
                         <img src="<?php echo $our_team_item["photo"]["url"]; ?>" alt="placeholder">
                     <?php else :
                         echo wp_get_attachment_image($our_team_item["photo"]["id"], "full");
                     endif;
                     ?>
-                    <p><?php echo $our_team_item["name"] ?? ''; ?></p>
+                    <p class="our-team__name"><?php echo $our_team_item["name"] ?? ''; ?></p>
                 </div>
             <?php endforeach; ?>
         </div>

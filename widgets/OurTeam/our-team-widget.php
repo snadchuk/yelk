@@ -86,7 +86,7 @@ class Our_Team_Widget extends \Elementor\Widget_Base
                     "unit" => "fr",
                 ],
                 "mobile_default" => [
-                    "size" => 2,
+                    "size" => 1,
                     "unit" => "fr",
                 ],
                 "selectors" => [
