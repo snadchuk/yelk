@@ -1,0 +1,13 @@
+.our-team{
+    text-align: center;
+}
+
+.our-team__container{
+    gap: 30px;
+}
+
+
+.elementor-widget-our_team .our-team__container img{
+    object-fit: cover;
+    min-height: 250px;
+}
